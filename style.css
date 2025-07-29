@@ -8,6 +8,7 @@ body {
   justify-content: space-between;
   background-color: #f7f7f7;
   margin: 0%;
+  padding: 20px;
 }
 .menu-items {
   display: flex;
@@ -16,4 +17,7 @@ body {
 }
 .logo {
   margin: 0px 160px;
+}
+.container-main {
+  padding: 20px;
 }
