@@ -1,0 +1,19 @@
+body {
+  background-color: rgb(170, 240, 242);
+}
+
+.container-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+  margin: 0%;
+}
+.menu-items {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+.logo {
+  margin: 0px 160px;
+}
