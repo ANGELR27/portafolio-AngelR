@@ -1,5 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #eaf2fc;
+  background: #b1e0f2;
+  background: linear-gradient(
+    90deg,
+    rgb(247, 253, 255) 0%,
+    rgb(212, 241, 245) 50%,
+    #f2f5fd 100%
+  );
   font-family: "Courier New", Courier, monospace;
 }
 
@@ -15,6 +27,10 @@ body {
   display: flex;
   gap: 15px;
   list-style: none;
+  font-size: 15px;
+}
+.menu {
+  margin-right: 150px;
 }
 .logo {
   margin: 0px 160px;
@@ -53,9 +69,10 @@ body {
 .sobre-mi {
   display: flex;
   flex-direction: column;
-  margin: 100px;
+  margin: 160px;
 }
 .redes-sociales {
+  margin: 20px 0px;
   display: flex;
   gap: 20px;
   padding: 10px;
@@ -63,4 +80,11 @@ body {
 }
 .redes a {
   color: #1c3a5f;
+}
+.primer-seccion {
+  display: flex;
+}
+.perfil {
+  border-radius: 50%;
+  margin: 80px 200px;
 }
