@@ -1,5 +1,6 @@
 body {
   background-color: #eaf2fc;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .container-menu {
@@ -53,4 +54,13 @@ body {
   display: flex;
   flex-direction: column;
   margin: 100px;
+}
+.redes-sociales {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  font-size: 30px;
+}
+.redes a {
+  color: #1c3a5f;
 }
