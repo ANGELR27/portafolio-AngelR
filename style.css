@@ -5,63 +5,89 @@
 }
 
 body {
-  background: #b1e0f2;
-  background: linear-gradient(
-    90deg,
-    rgb(247, 253, 255) 0%,
-    rgb(212, 241, 245) 50%,
-    #f2f5fd 100%
-  );
-  font-family: "Courier New", Courier, monospace;
+  background-color: #edf9fe;
+
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .container-menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f7f7f7;
   margin: 0%;
-  padding: 20px;
+  padding: 30px;
+  color: #141414cd;
+  font-size: 20px;
 }
 .menu-items {
   display: flex;
-  gap: 15px;
+  gap: 18px;
   list-style: none;
-  font-size: 15px;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
+
+.dark-mode {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.img-dark-mode {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
 .menu {
   margin-right: 150px;
 }
+
 .logo {
   margin: 0px 160px;
 }
+
 .container-main {
   padding: 20px;
 }
+
 .apellido {
   color: #4c9cf8;
 }
+.titulo-principal {
+  font-size: 50px;
+}
+
 .btn-cont {
   border-radius: 10px;
-  padding: 8px;
+  padding: 6px;
   display: flex;
   align-items: center;
   gap: 10px;
-  margin: 10px;
+  margin: 100px;
   background-color: #0b72e8;
   color: #eaf2fc;
   border-color: #4c9cf8;
+  height: 60%;
+  margin: 15px 0px;
 }
+
 .btn-cv {
   border-radius: 10px;
   padding: 6px;
   display: flex;
   align-items: center;
   gap: 10px;
-  margin: 10px;
+  margin: 15px;
   border-color: #4c9cf8;
   color: #0d6fdf;
   background-color: #ffffff;
+  height: 60%;
 }
 .botones-principal {
   display: flex;
@@ -70,7 +96,11 @@ body {
   display: flex;
   flex-direction: column;
   margin: 160px;
+  color: #090909b7;
+  gap: 20px;
+  font-size: 20px;
 }
+
 .redes-sociales {
   margin: 20px 0px;
   display: flex;
@@ -79,12 +109,53 @@ body {
   font-size: 30px;
 }
 .redes a {
-  color: #1c3a5f;
+  color: #000000bd;
 }
+
 .primer-seccion {
   display: flex;
+  border-radius: 20px 30px 5px 2px;
 }
+
 .perfil {
   border-radius: 50%;
   margin: 80px 200px;
+  border: solid 3px;
+  border-bottom-color: #0b72e8;
+}
+
+.text-presentacion {
+  letter-spacing: 2px;
+}
+.-container-experiencia {
+  display: flex;
+  justify-content: space-between;
+  background-color: #bcccdc;
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  padding: 70px 160px;
+}
+
+.tecnologias-proyectos {
+  border: solid 3px rgba(0, 0, 0, 0.67);
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.tecnologias {
+  margin: 30px 0px;
+}
+
+.img-tecnologia {
+  width: 50px;
+  height: 50px;
+  gap: 20px;
+  margin: 20px 0px;
+}
+#js {
+  border-radius: 5px;
+}
+.proyectos {
+  margin: 20px 0px;
 }
