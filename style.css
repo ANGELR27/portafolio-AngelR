@@ -5,21 +5,26 @@
 }
 
 body {
-  background-color: #edf9fe;
-
-  background-size: cover;
+  background: #0f131b;
+  background: linear-gradient(
+    90deg,
+    rgba(15, 19, 27, 1) 0%,
+    rgba(15, 25, 35, 1) 50%,
+    rgba(15, 33, 45, 1) 100%
+  );
   min-height: 100vh;
   margin: 0;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .container-menu {
+  background-color: #0f131b;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0%;
   padding: 30px;
-  color: #141414cd;
+  color: #ebebebc2;
   font-size: 20px;
 }
 .menu-items {
@@ -45,7 +50,6 @@ body {
 }
 
 .menu {
-  margin-right: 150px;
 }
 
 .logo {
@@ -54,6 +58,14 @@ body {
 
 .container-main {
   padding: 20px;
+  background: #0f131b;
+  background: linear-gradient(
+    90deg,
+    rgba(15, 19, 27, 1) 0%,
+    rgba(15, 25, 35, 1) 50%,
+    rgba(15, 33, 45, 1) 100%
+  );
+  color: #ebebebc2;
 }
 
 .apellido {
@@ -70,7 +82,7 @@ body {
   align-items: center;
   gap: 10px;
   margin: 100px;
-  background-color: #0b72e8;
+  background-color: #0a85a9;
   color: #eaf2fc;
   border-color: #4c9cf8;
   height: 60%;
@@ -85,7 +97,7 @@ body {
   gap: 10px;
   margin: 15px;
   border-color: #4c9cf8;
-  color: #0d6fdf;
+  color: #0a85a9;
   background-color: #ffffff;
   height: 60%;
 }
@@ -96,7 +108,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 160px;
-  color: #090909b7;
+  color: #c5bfbfb7;
   gap: 20px;
   font-size: 20px;
 }
@@ -109,7 +121,7 @@ body {
   font-size: 30px;
 }
 .redes a {
-  color: #000000bd;
+  color: #f3eeeebd;
 }
 
 .primer-seccion {
@@ -126,18 +138,19 @@ body {
 
 .text-presentacion {
   letter-spacing: 2px;
+  margin: 20px 0px;
 }
 .-container-experiencia {
   display: flex;
   justify-content: space-between;
-  background-color: #bcccdc;
-  border-bottom-right-radius: 60px;
-  border-bottom-left-radius: 60px;
+  background-color: #0f131b;
+  color: #eaf2fc;
   padding: 70px 160px;
+  margin: 0px 0px;
 }
 
 .tecnologias-proyectos {
-  border: solid 3px rgba(0, 0, 0, 0.67);
+  border: solid 3px rgba(25, 181, 209, 0.67);
   border-radius: 20px;
   padding: 20px;
   font-size: 20px;
@@ -158,4 +171,34 @@ body {
 }
 .proyectos {
   margin: 20px 0px;
+}
+
+.proyectos p {
+  margin: 15px 0px;
+}
+
+.container-tecnologias {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tec {
+  width: 150px;
+  height: 150px;
+}
+
+.container-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f131b;
+  color: #a6a8aa;
+  padding: 30px;
+  gap: 20px;
+}
+
+.img-logo-footer {
+  width: 130px;
+  height: 130px;
 }
