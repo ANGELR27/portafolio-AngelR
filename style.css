@@ -182,6 +182,12 @@ body {
   justify-content: space-around;
 }
 
+.tec a {
+  text-decoration: none;
+  color: #eaf2fc;
+  font-size: 130px;
+}
+
 .tec {
   width: 150px;
   height: 150px;
@@ -201,4 +207,13 @@ body {
 .img-logo-footer {
   width: 130px;
   height: 130px;
+}
+
+.menu-footer {
+  gap: 400px;
+}
+
+.menu-footer li {
+  list-style: none;
+  font-size: 20px;
 }
