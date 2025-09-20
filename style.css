@@ -196,7 +196,7 @@ body {
 #js {
   border-radius: 5px;
 }
-.proyectos {
+.tecnologias {
   margin: 20px 0px;
 }
 
@@ -246,24 +246,74 @@ body {
 }
 
 .seccion-proyectos {
-  columns: 3;
-  background-color: #0f131b;
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  width: 100%;
+
+  padding: 30px;
+  margin-block: 100px;
 }
 
 .container-proyectos {
-  border: 5px red;
+  width: 380px;
+  height: 494px;
+  background-image: url(./CarritoHome.jpg);
+  background-size: cover;
+  background-position: center;
+  gap: 40px;
+  border-radius: 20px;
+  background-color: #a0a1a244;
+  backdrop-filter: blur(-10px);
+  -webkit-backdrop-filter: blur(-10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  box-shadow: 0 0 20px 10px rgba(183, 181, 181, 0.408);
+}
+.container-proyectos-3 {
+  width: 380px;
+  height: 494px;
+  background-image: url(.//CatHome.jpg);
+  background-size: cover;
+  background-position: center;
+  gap: 40px;
+  border-radius: 20px;
+  background-color: #a0a1a244;
+  backdrop-filter: blur(-10px);
+  -webkit-backdrop-filter: blur(-10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.667);
 }
 
 .proyecto {
-  border: solid 4px rgb(0, 217, 255);
-  width: 400px;
-  height: 500px;
-  padding: 15px;
-  gap: 40px;
   border-radius: 20px;
-}
-.img-proyecto {
+  background-color: #00000076;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  flex-align: end;
   width: 100%;
-  height: 70%;
+  height: 300px;
+  padding: 20px;
+  margin: 0;
+}
+.proyecto h2 {
+  color: #4c9cf8;
+}
+
+.tec-proyecto img {
+  width: 60px;
+  height: auto;
+  filter: drop-shadow(0 0 2px #fb0303);
 }
