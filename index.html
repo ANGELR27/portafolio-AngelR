@@ -1,123 +1,442 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio de Angel Rodriguez</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="./img/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <title>Portafolio-A</title>
   </head>
   <body>
-    <header>
+    <header class="site-header">
       <div class="container-menu">
         <div class="logo">
-          <h2>Angel <strong class="apellido">Rodriguez</strong></h2>
+          <a class="logo-link" href="#inicio"
+            >Angel <strong class="apellido">Rodriguez</strong></a
+          >
         </div>
-        <nav class="menu" action="">
+        <nav class="menu" aria-label="Secciones principales">
           <ul class="menu-items">
-            <li>Inicio</li>
-            <li>Experiencia</li>
-            <li>Sobre mi</li>
-            <li>Habilidades</li>
-            <li>Proyectos</li>
-            <li>Contacto</li>
-            
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#sobre-mi">Sobre mi</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
-        <button class="dark-mode"><img src="./img/dia-y-noche.png" class="img-dark-mode" alt=""></button>
+        <button
+          class="dark-mode"
+          type="button"
+          aria-label="Cambiar a modo oscuro"
+        >
+          <img
+            src="./img/dia-y-noche.png"
+            class="img-dark-mode"
+            alt="Icono modo oscuro"
+          />
+        </button>
       </div>
     </header>
-    <main class="container-main">
-     <div class="primer-seccion">
-       <div class="sobre-mi">
-        <h1 class="titulo-principal">PORTAFOLIO</h1>
-        <p class="text-presentacion">Angel Rodriguez</p>
-        <p>Desarrollador Full Stack</p>
-        
-        <div class="botones-principal">
-          <div id="btn-cont">
-            <button class="btn-cont" >
-            <i class="fa-regular fa-envelope"></i>Contactar
-          </button>
+    <main>
+      <section id="inicio" class="section hero">
+        <div class="section-wrapper hero-wrapper">
+          <div class="hero-content">
+            <p class="hero-eyebrow">Hola, soy</p>
+            <h1 class="hero-title">Angel Rodriguez</h1>
+            <p class="hero-role">Desarrollador Full Stack</p>
+            <p class="hero-description">
+              Creo soluciones digitales centradas en las personas, combinando un
+              codigo limpio con interfaces atractivas.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contacto"
+                ><i class="fa-regular fa-envelope"></i> Contactar</a
+              >
+              <a
+                class="btn btn-secondary"
+                href="./Angel R CV -Final.docx.pdf"
+                download
+                ><i class="fa-solid fa-download"></i> Descargar CV</a
+              >
+            </div>
+            <ul class="social-links">
+              <li>
+                <a
+                  href="https://github.com/ANGELR27"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/angel-rodr%C3%ADguez-632b33231/"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noreferrer"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
           </div>
-          <button class="btn-cv">
-            <i class="fa-solid fa-download"></i>Descargar CV
-          </button>
+          <div class="hero-photo">
+            <img
+              class="perfil"
+              src="./img/perfil.png"
+              alt="Rostro de Angel Rodriguez"
+            />
+          </div>
         </div>
-        <div class="redes-sociales">
-             <div class="redes"> <a href="https://github.com/ANGELR27"><i class="fa-brands fa-github"></i></a></div>
-            <div class="redes"><a href="https://www.linkedin.com/in/angel-rodr%C3%ADguez-632b33231/"><i class="fa-brands fa-linkedin"></i></a></div>
-            <div class="redes"><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+      </section>
+
+      <section id="sobre-mi" class="section about">
+        <div class="section-wrapper">
+          <div class="section-heading">
+            <span class="section-eyebrow">Quien soy</span>
+            <h2>Sobre mi</h2>
+            <p>
+              Desarrollador full stack con enfoque en experiencias modernas y
+              accesibles. Disfruto colaborar con equipos multidisciplinarios
+              para transformar ideas en productos reales.
+            </p>
           </div>
+          <div class="about-highlights">
+            <article class="highlight-card">
+              <h3>Vision</h3>
+              <p>
+                Crear productos que aporten valor real mediante iteraciones
+                rapidas y aprendizaje continuo.
+              </p>
+            </article>
+            <article class="highlight-card">
+              <h3>Valores</h3>
+              <p>
+                Trabajo transparente, comunicacion clara y responsabilidad en
+                cada entrega.
+              </p>
+            </article>
+            <article class="highlight-card">
+              <h3>Enfoque</h3>
+              <p>
+                Combinar buenas practicas con un diseno atractivo para
+                garantizar mantenibilidad e impacto.
+              </p>
+            </article>
           </div>
-          <div class="container-img-perfil"><img class="perfil" src="./img/perfil.jpg" alt="Rostro de Angel"></div>
         </div>
-      </div>
-     </div>
-    
-        <div class="tecnologias"></div>
-        <div class="container-tecnologias">
-      <div class="tec"><a href=""><i class="fa-brands fa-java"></i></a></div>
-      <div class="tec"><a href="https://www.linkedin.com/in/angel-rodr%C3%ADguez-632b33231/"><i class="fa-brands fa-html5"></i></a></div>
-      <div class="tec"><a href="https://www.linkedin.com/in/angel-rodr%C3%ADguez-632b33231/"><i class="fa-brands fa-css3-alt"></i></a></div>
-      <div class="tec"><a href="https://www.linkedin.com/in/angel-rodr%C3%ADguez-632b33231/"><i class="fa-brands fa-square-js"></i></a></div>
-    </div>
-    <!-- seccion de proyectos -->
-    <div class="seccion-proyectos">
-      <div class="container-proyectos"> 
-         <div class="proyecto">
-            
-              <h2>PokeApi</h2>
-              <p></p>
-            <div class="links-proyecto"><button></button></div>
-            <div class="links-proyecto"><button></button></div>
-         </div>
-         
-      </div>
-      <div class="container-proyectos"> 
-         <div class="proyecto">
-            
-              <h2>PokeApi</h2>
-              <p>hola</p>
-            <div class="links-proyecto"><button></button></div>
-            
-         </div>
-         
-      </div>
-      <div class="container-proyectos-3"> 
-         <div class="proyecto">
-            
-              <h2>PokeApi</h2>
-              <div class="tec-proyecto"> 
-                <img src="./image.png" alt="">
-                
+      </section>
+
+      <section id="experiencia" class="section experience">
+        <div class="section-wrapper">
+          <div class="section-heading">
+            <span class="section-eyebrow">Trayectoria</span>
+            <h2>Experiencia</h2>
+            <p>
+              Roles y proyectos destacados que han fortalecido mi perfil tecnico
+              y colaborativo.
+            </p>
+          </div>
+          <div class="experience-timeline">
+            <article class="experience-card">
+              <header>
+                <span class="experience-period">2023 - Actualidad</span>
+                <h3>Desarrollador Full Stack - Freelancer</h3>
+              </header>
+              <p>
+                Diseno y desarrollo de aplicaciones web personalizadas,
+                integrando APIs, bases de datos y despliegues en la nube.
+              </p>
+              <ul class="experience-list">
+                <li>
+                  Automatizacion de procesos internos con paneles
+                  administrativos.
+                </li>
+                <li>
+                  Refactorizacion de codigo legacy para mejorar rendimiento y
+                  seguridad.
+                </li>
+              </ul>
+            </article>
+            <article class="experience-card">
+              <header>
+                <span class="experience-period">2021 - 2023</span>
+                <h3>Desarrollador Frontend - Proyectos personales</h3>
+              </header>
+              <p>
+                Construccion de interfaces accesibles y responsive, priorizando
+                un diseno modular y escalable.
+              </p>
+              <ul class="experience-list">
+                <li>
+                  Implementacion de componentes reutilizables con HTML, CSS y
+                  JavaScript.
+                </li>
+                <li>
+                  Uso de metodologias agiles y versionamiento colaborativo con
+                  Git.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="habilidades" class="section skills">
+        <div class="section-wrapper">
+          <div class="section-heading">
+            <span class="section-eyebrow">Stack</span>
+            <h2>Habilidades</h2>
+            <p>
+              Herramientas y tecnologias con las que construyo soluciones
+              eficientes.
+            </p>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card">
+              <h3>Frontend</h3>
+              <ul>
+                <li>HTML5 - CSS3 - JavaScript</li>
+                <li>React - Tailwind CSS</li>
+                <li>Diseno responsive y accesible</li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <h3>Backend</h3>
+              <ul>
+                <li>Java - Spring Boot</li>
+                <li>APIs REST y autenticacion</li>
+                <li>Gestion de bases de datos SQL.</li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <h3>Herramientas</h3>
+              <ul>
+                <li>Git - GitHub</li>
+                <li>Metodologias agiles</li>
+                <li>Pruebas y despliegue continuo</li>
+              </ul>
+            </article>
+            <div class="skills-icons">
+              <i class="fa-brands fa-java"></i>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-square-js"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="proyectos" class="section projects">
+        <div class="section-wrapper">
+          <div class="section-heading">
+            <span class="section-eyebrow">Casos reales</span>
+            <h2>Proyectos</h2>
+            <p>
+              Aplicaciones que demuestran mi capacidad para resolver problemas
+              de negocio con tecnologia.
+            </p>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-image">
+                <img
+                  src="./CarritoHome.jpg"
+                  alt="Vista previa de proyecto de ecommerce"
+                />
               </div>
-            <div class="links-proyecto"><button></button></div>
-            <div class="links-proyecto"><button></button></div>
-         </div>
-         
-      </div>
-    </div>
+              <div class="project-body">
+                <h3>Carrito Ecommerce</h3>
+                <p>
+                  Sistema de compras con catalogo dinamico, gestion de carrito y
+                  actualizaciones en tiempo real.
+                </p>
+                <ul class="project-tags">
+                  <li>Html</li>
+                  <li>Css</li>
+                  <li>Javascript</li>
+                </ul>
+                <div class="project-links">
+                  <a
+                    class="project-link"
+                    href="#"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Demo</a
+                  >
+                  <a
+                    class="project-link secondary"
+                    href="https://github.com/ANGELR27"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Codigo</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-image">
+                <img
+                  src="./img/CatHome.png"
+                  alt="Vista previa de proyecto de adopcion de mascotas"
+                />
+              </div>
+              <div class="project-body">
+                <h3>Adopcion Felina</h3>
+                <p>
+                  Plataforma para promover la adopcion responsable con filtros
+                  inteligentes y panel administrativo.
+                </p>
+                <ul class="project-tags">
+                  <li>Vue</li>
+                  <li>Firebase</li>
+                  <li>UX Research</li>
+                </ul>
+                <div class="project-links">
+                  <a
+                    class="project-link"
+                    href="#"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Demo</a
+                  >
+                  <a
+                    class="project-link secondary"
+                    href="https://github.com/ANGELR27"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Codigo</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-image">
+                <img
+                  src="./image.png"
+                  alt="Vista previa de dashboard analitico"
+                />
+              </div>
+              <div class="project-body">
+                <h3>Dashboard Analytics</h3>
+                <p>
+                  Panel de indicadores interactivo con visualizaciones
+                  personalizadas y exportacion de reportes.
+                </p>
+                <ul class="project-tags">
+                  <li>Next.js</li>
+                  <li>TypeScript</li>
+                  <li>Supabase</li>
+                </ul>
+                <div class="project-links">
+                  <a
+                    class="project-link"
+                    href="#"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Demo</a
+                  >
+                  <a
+                    class="project-link secondary"
+                    href="https://github.com/ANGELR27"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Codigo</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="section contact">
+        <div class="section-wrapper">
+          <div class="section-heading">
+            <span class="section-eyebrow">Trabajemos juntos</span>
+            <h2>Contacto</h2>
+            <p>
+              Tienes una idea o un proyecto en mente? Enviame un mensaje y
+              conversemos sobre como puedo ayudarte.
+            </p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-info">
+              <div>
+                <i class="fa-regular fa-envelope"></i
+                ><span>contacto@angel.dev</span>
+              </div>
+              <div>
+                <i class="fa-brands fa-linkedin"></i
+                ><a
+                  href="https://www.linkedin.com/in/angel-rodr%C3%ADguez-632b33231/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >LinkedIn</a
+                >
+              </div>
+              <div>
+                <i class="fa-brands fa-github"></i
+                ><a
+                  href="https://github.com/ANGELR27"
+                  target="_blank"
+                  rel="noreferrer"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="mailto:contacto@angel.dev"
+                ><i class="fa-regular fa-paper-plane"></i> Enviar correo</a
+              >
+              <a
+                class="btn btn-secondary"
+                href="https://www.linkedin.com/in/angel-rodr%C3%ADguez-632b33231/"
+                target="_blank"
+                rel="noreferrer"
+                ><i class="fa-solid fa-user-plus"></i> Conectar</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    
     <footer class="container-footer">
-      <div class="logo-footer"><img src="./img/logo.jpg" alt="logo" class="img-logo-footer"></div>
+      <div class="logo-footer">
+        <img src="./img/logo.jpg" alt="Logo personal" class="img-logo-footer" />
+      </div>
       <div class="links-menu">
         <ul class="menu-footer">
-          <li>Inicio</li>
-          <li>Experiencia</li>
-          <li>Sobre mi</li>
-          <li>Habilidades</li>
-          <li>Proyectos</li>
-          <li>Contacto</li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#sobre-mi">Sobre mi</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </div>
       <div class="redes-sociales-footer">
-        <div class="redes"><a href="https://www.linkedin.com/in/angel-rodr%C3%ADguez-632b33231/"><i class="fa-brands fa-linkedin"></i></a></div>
+        <div class="redes">
+          <a
+            href="https://www.linkedin.com/in/angel-rodr%C3%ADguez-632b33231/"
+            target="_blank"
+            rel="noreferrer"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+        <div class="redes">
+          <a href="https://github.com/ANGELR27" target="_blank" rel="noreferrer"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
       </div>
     </footer>
     <script src="script.js"></script>
